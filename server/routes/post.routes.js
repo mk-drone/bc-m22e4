@@ -8,6 +8,8 @@ router.route('/posts').get(PostController.getPosts);
 // Get one post by cuid
 router.route('/posts/:cuid').get(PostController.getPost);
 
+router.route('/posts/:cuid').put(PostController.editPost);
+
 // Add a new Post
 router.route('/posts').post(PostController.addPost);
 
